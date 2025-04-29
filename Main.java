@@ -1,21 +1,17 @@
-// Calculates and prints the area of a rectangle
-class RectangleArea {
+// Adds two numbers and prints the result
+ class Adder {
 
-    void calculateArea() {
-        double length;    // Length of the rectangle
-        double width;     // Width of the rectangle
-        double area;
-
-        length = 10.5;
-        width = 4.2;
-
-        area = length * width;
-        System.out.println("Length: " + length);
-        System.out.println("Width: " + width);
-        System.out.println("Area of the rectangle: " + area);
+    // Method to perform the addition
+    void addNumbers() {
+        int a = 5;                  // First number
+        int b = 7;                  // Second number
+        int sum = a + b;           // Add them
+        System.out.println("The sum is: " + sum);  // Print the result
     }
 
+    // Main method - the entry point of the program
     public static void main(String[] args) {
-        (new RectangleArea()).calculateArea();
+        // Create an object of Adder and call addNumbers()
+        (new Adder()).addNumbers();
     }
 }
